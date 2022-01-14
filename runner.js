@@ -38,7 +38,7 @@ zero.on('connecting', () => {
 start('2', 'Sedang Menyambungkan Mohon Tunggu...')
 })
 zero.on('open', () => {
-success('2', 'Bot Telah Tersambung... Jangan Lupa Subscribe Zero YT7')
+success('2', 'Bot Telah Tersambung... ')
 })
 await zero.connect({timeoutMs: 30*1000})
 fs.writeFileSync('./session/qrsession.json', JSON.stringify(zero.base64EncodedAuthInfo(), null, '\t'))
@@ -79,7 +79,7 @@ pp_grup =
 "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60"
 }
 if (anu.action == "add" && mem.includes(zero.user.jid)) {
-zero.sendMessage(anu.jid, "𝐇𝐚𝐲!.. 𝐒𝐚𝐲𝐚 𝐙𝐞𝐫𝐨 𝐘𝐓𝟕 𝐒𝐚𝐲𝐚 𝐀𝐤𝐚𝐧 𝐌𝐞𝐦𝐛𝐚𝐧𝐭𝐮 𝐌𝐞𝐦𝐛𝐚𝐧𝐭𝐮 𝐌𝐞𝐦𝐩𝐞𝐫𝐦𝐮𝐝𝐚𝐡 𝐊𝐢𝐧𝐞𝐫𝐣𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐒𝐞𝐩𝐞𝐫𝐭𝐢 𝐌𝐞𝐦𝐛𝐮𝐚𝐭 𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐃𝐚𝐧 𝐋𝐚𝐢𝐧 𝐋𝐚𝐢𝐧.", "conversation")
+zero.sendMessage(anu.jid, "𝐇𝐚𝐲!.. 𝐒𝐚𝐲𝐚 友Abyss Bot 𝐒𝐚𝐲𝐚 𝐀𝐤𝐚𝐧 𝐌𝐞𝐦𝐛𝐚𝐧𝐭𝐮 𝐌𝐞𝐦𝐛𝐚𝐧𝐭𝐮 𝐌𝐞𝐦𝐩𝐞𝐫𝐦𝐮𝐝𝐚𝐡 𝐊𝐢𝐧𝐞𝐫𝐣𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐒𝐞𝐩𝐞𝐫𝐭𝐢 𝐌𝐞𝐦𝐛𝐮𝐚𝐭 𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐃𝐚𝐧 𝐋𝐚𝐢𝐧 𝐋𝐚𝐢𝐧.", "conversation")
 }
       
 if (anu.action == 'add') {
@@ -93,7 +93,7 @@ ppUrl = 'https://telegra.ph/file/c9dfa715c26518201f478.jpg'
 }
 img = await getBuffer(ppUrl)
 teks = `Hallo @${anu_user}\nSelamat Datang Di Group: ${mdata.subject}\n\nSemoga Betah Ya Di Group Ini`
-sendButImage(anu.jid, teks, `©Created By Zero YT7`, img,but = [{buttonId:`hallo`, 
+sendButImage(anu.jid, teks, `©Created By Nasir`, img,but = [{buttonId:`hallo`, 
 buttonText:{displayText: 'SELAMAT DATANG!!!'},type:1}], options = {contextInfo: {mentionedJid: [num, number]},thumbnail: Buffer.alloc(0)})
 } else if (anu.action == 'remove') {
 num = anu.participants[0]
@@ -104,7 +104,7 @@ ppUrl = 'https://i.ibb.co/6BRf4Rc/Hans-Bot-No-Profile.png'
 }
 img = await getBuffer(ppUrl)
 teks = `Bye Bye @${num.split('@')[0]}\nHore... Beban Group Berkurang Selamat Tinggal Di Group: ${mdata.subject}`
-sendButImage(anu.jid, teks, `©Created By Zero YT7`, img,but= [{buttonId: `byebye`, buttonText: {displayText: `SELAMAT TINGGAL!!!`}, type: 1}], options = {contextInfo: {mentionedJid: [num, number]}, thumbnail: Buffer.alloc(0)})
+sendButImage(anu.jid, teks, `©Created By Nasir`, img,but= [{buttonId: `byebye`, buttonText: {displayText: `SELAMAT TINGGAL!!!`}, type: 1}], options = {contextInfo: {mentionedJid: [num, number]}, thumbnail: Buffer.alloc(0)})
 }
 if (anu.action == "promote") {
 anu_user = zero.contacts[mem]
