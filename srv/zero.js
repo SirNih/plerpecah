@@ -56,7 +56,7 @@ var moment = require('moment-timezone')
 var { exec, spawn, execSync } = require('child_process')
 fakeimg = fs.readFileSync('./img/zero.jpg')
 fakethumb = fs.readFileSync('./img/thumbnail.jpg')
-faketeks = '©Created By Zero YT7'
+faketeks = 'NO SPAM BANG'
 blocked = []
 multi =false
 nopref = false
@@ -86,6 +86,7 @@ var apikey4 = config.Zeks
 var apikey5 = config.Zero
 var apikey6 = config.Nurutomo
 var apikey7 = config.Hunter
+var apikey8 = config.apisenku
 
 //━━━━━━━━━━━━━━━[ JAM ]━━━━━━━━━━━━━━━━━//
 
@@ -183,7 +184,7 @@ var messagesD = pes.slice(0).trim().split(/ +/).shift().toLowerCase()
 var botNumber = zero.user.jid
 var Verived = "0@s.whatsapp.net"
 var num = "6285157740529@s.whatsapp.net"
-var ownerNumber = [`${NomorOwner}@s.whatsapp.net`,"6285157740529@s.whatsapp.net"]
+var ownerNumber = [`${NomorOwner}@s.whatsapp.net`,"6282262572982@s.whatsapp.net"]
 var isGroup = from.endsWith('@g.us')
 var sender = zer.key.fromMe ? zero.user.jid : isGroup ? zer.participant : zer.key.remoteJid
 var senderNumber = sender.split("@")[0] 
@@ -288,8 +289,8 @@ orderMessage: {
 itemCount : 169,
 status: 1,
 surface : 1,
-message: `Subscribe Zero YT7`, 
-orderTitle: `Subscribe Zero YT7`,
+message: `友Abyss Bot`, 
+orderTitle: `友Abyss Bot`,
 thumbnail: fakethumb,
 sellerJid: '0@s.whatsapp.net' 
 }
@@ -406,7 +407,7 @@ timestamp = speed();
 latensi = speed() - timestamp
 teks =
 `┏━➤ *INFO BOT* 
-*┃┃* Creator Bot : Zero YT7
+*┃┃* Creator Base Bot : Zero YT7
 *┃┃* Nama Owner : ${NameOwner}
 *┃┃* Nama Bot : ${NameBot}
 *┃┃* Prefix : Multi Prefix
@@ -417,7 +418,7 @@ teks =
 *┃┗━━━━━━━━*
 *┃◗ Thanks To Allah S.W.T*
 *┃◗ Thank To Ortu*
-*┃◗ Thank To Zero YT7 (Creator)*
+*┃◗ Thank To Zero YT7 (Base)*
 *┃◗ Thanks To All Subscriberku*
 *┗━━━━━━━ •*`
                   but = [
@@ -430,7 +431,7 @@ case 'menu':
 teks =
 `𝐇𝐚𝐥𝐥𝐨... ${pushname}, ${ucapanWaktu}
 𝐀𝐩𝐚 𝐊𝐚𝐛𝐚𝐫...? 𝐒𝐞𝐦𝐨𝐠𝐚 𝐇𝐚𝐫𝐢𝐦𝐮 𝐌𝐞𝐧𝐲𝐞𝐧𝐚𝐧𝐠𝐤𝐚𝐧
-𝐉𝐚𝐧𝐠𝐚𝐧 𝐋𝐮𝐩𝐚 𝐁𝐚𝐡𝐚𝐠𝐢𝐚 𝐘𝐚
+𝐉𝐚𝐧𝐠𝐚𝐧 ??𝐮𝐩𝐚 𝐁𝐚𝐡𝐚𝐠𝐢𝐚 𝐘𝐚
 
 [ 𝗜𝗡𝗙𝗢 𝗕𝗢𝗧 ]
 𝐍𝐚𝐦𝐚 𝐁𝐨𝐭 : ${NameBot}
@@ -481,6 +482,7 @@ teks =
 • ${prefix}report
 • ${prefix}runtime
 • ${prefix}speed
+• ${prefix}cersex
 
 𝐄𝐯𝐚𝐥 𝐌𝐞𝐧𝐮
 • x
@@ -684,7 +686,7 @@ if(!q)return reply(`*Format Error!*\n\n*Example : ${prefix + command} @tag*`)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 y = q.split('@')[1] + '@s.whatsapp.net'
 zero.groupRemove(from, [y])
-reply(`𝐒𝐮𝐜𝐜𝐬𝐞𝐬 𝐊𝐢𝐜𝐤 𝐓𝐚𝐫𝐠𝐞𝐭!`)
+reply(`𝐒𝐮𝐜??𝐬𝐞𝐬 𝐊𝐢𝐜𝐤 𝐓𝐚𝐫𝐠𝐞𝐭!`)
 break
 case 'tagall':
 if (!isGroup) return reply("Khusus di grup");
@@ -920,7 +922,7 @@ let inilist = []
 for (let i of ownerNumber) {
 let vname = zero.contacts[i] != undefined ? zero.contacts[i].vname || zero.contacts[i].notify : undefined
 inilist.push({
-"displayName": 'ZeroYT7',
+"displayName": 'Owner 友Abyss Bot',
 "vcard": 'BEGIN:VCARD\n'
 + 'VERSION:3.0\n'
 + `FN:${NameOwner}\n`
@@ -960,17 +962,17 @@ reply('Masalah Telah Di Laporkan Ke Owner BOT, Mohon Tunggu Untuk Proses Perbaik
 break
 case 'youtube':
 teks =
-`Nih Youtube Owner Ku Jangan Lupa Di Subscribe Ya https://youtube.com/ZeroYT7`
+`Nih Youtube Owner Ku Jangan Lupa Di Subscribe Ya https://youtube.com/channel/UCARfQQuVv3ZmpcwExq5BGjQ`
 zero.sendMessage(from, teks, text, {quoted: ftrol})
 break
 case 'instagram':
 teks =
-`Nih Instagram Owner Ku Jangan Lupa Di Follow Ya https://instagram.com/Zero_YT7`
+`Nih Instagram Owner Ku Jangan Lupa Di Follow Ya https://www.instagram.com/my_name_nasir8/`
 zero.sendMessage(from, teks, text, {quoted: ftrol})
 break
 case 'tiktok':
 teks =
-`Nih Tiktok Owner Ku Jangan Lupa Di Follow Ya https://tiktok.com/@_zeroyt7`
+`Belum Tersedia Untuk Saat Ini !!!`
 zero.sendMessage(from, teks, text, {quoted: ftrol})
 break
 case "runtime":
@@ -1003,6 +1005,12 @@ but = [
         sendButLocation(from, teks, faketeks, fakeimg, but, { thumbnail: Buffer.alloc(0) })
 break
 
+case 'cersex':
+     if (!isOwner && !zer.key.fromMe) return reply(`Lu Ga Owner`)
+					gatauda = body.slice(1)
+					anu = await fetchJson(`https://api-senku.herokuapp.com/api/cersex?apikey=${apikey8}`)
+					reply(anu.result)
+					break
 //━━━━━━━━━━━━━━━[ AKHIR FITUR ]━━━━━━━━━━━━━━━━━//
         
 default:
